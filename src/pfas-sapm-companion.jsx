@@ -482,7 +482,7 @@ export default function PFASSAPMCompanion() {
           <span style={{fontFamily:"'JetBrains Mono', monospace",fontSize:42,fontWeight:700,color:"#EF4444"}}>𝒮_W = 0.028</span>
         </div>
         <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:11,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
-          S&P 500 long-run Sharpe ≈ 0.40 &nbsp;|&nbsp; Acceptable ≥ 0.30 &nbsp;|&nbsp; Poor < 0.10
+          S&P 500 long-run Sharpe ≈ 0.40 &nbsp;|&nbsp; Acceptable ≥ 0.30 &nbsp;|&nbsp; Poor &lt; 0.10
         </div>
         <div style={{fontFamily:"'Newsreader', serif",fontSize:14,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
           No institutional investor would hold an asset with this risk-adjusted return. This is what GDP calls productive output.
