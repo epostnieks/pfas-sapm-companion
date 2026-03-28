@@ -83,7 +83,7 @@ export default function SAPMNav() {
               All Dashboards
             </div>
             <div style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", marginTop: 6 }}>
-              Postnieks Impossibility Program · 2025–2026
+              © 2026 Erik Postnieks · 2025–2026
             </div>
           </div>
 
