@@ -477,32 +477,32 @@ export default function PFASSAPMCompanion() {
 
       {/* 𝒮_W WELFARE EFFICIENCY RATIO */}
       <div style={{padding:"24px",background:"#1A1A1A",border:"2px solid #EF444440",borderRadius:4,margin:"24px 0"}}>
-        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:10,color:"#EF4444",letterSpacing:2,marginBottom:16}}>WELFARE EFFICIENCY RATIO</div>
+        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:12,color:"#EF4444",letterSpacing:2,marginBottom:16}}>WELFARE EFFICIENCY RATIO</div>
         <div style={{display:"flex",alignItems:"baseline",gap:12,marginBottom:12}}>
           <span style={{fontFamily:"'JetBrains Mono', monospace",fontSize:42,fontWeight:700,color:"#EF4444"}}>𝒮_W = 0.028</span>
         </div>
-        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:11,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
+        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:13,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
           S&P 500 long-run Sharpe ≈ 0.40 &nbsp;|&nbsp; Acceptable ≥ 0.30 &nbsp;|&nbsp; Poor &lt; 0.10
         </div>
-        <div style={{fontFamily:"'Newsreader', serif",fontSize:14,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
+        <div style={{fontFamily:"'Newsreader', serif",fontSize:16,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
           No institutional investor would hold an asset with this risk-adjusted return. This is what GDP calls productive output.
         </div>
       </div>
 
       {/* GREEK SYMBOL GLOSSARY */}
       <details style={{margin:"24px 0"}}>
-        <summary style={{fontFamily:"'JetBrains Mono', monospace",fontSize:11,color:"#F59E0B",cursor:"pointer",padding:"12px 16px",background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderRadius:4,letterSpacing:1,listStyle:"none",display:"flex",alignItems:"center",gap:8}}>
+        <summary style={{fontFamily:"'JetBrains Mono', monospace",fontSize:13,color:"#F59E0B",cursor:"pointer",padding:"12px 16px",background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderRadius:4,letterSpacing:1,listStyle:"none",display:"flex",alignItems:"center",gap:8}}>
           <span style={{color:"#F59E0B",fontSize:14}}>▸</span> WHAT THESE SYMBOLS MEAN — AND WHY THEY MATTER
         </summary>
         <div style={{background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderTop:"none",borderRadius:"0 0 4px 4px",padding:"16px",overflowX:"auto"}}>
-          <table style={{width:"100%",borderCollapse:"collapse",fontFamily:"'JetBrains Mono', monospace",fontSize:11}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontFamily:"'JetBrains Mono', monospace",fontSize:13}}>
             <thead>
               <tr style={{borderBottom:"1px solid rgba(255,255,255,0.1)"}}>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>SYMBOL</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>PRONOUNCED</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>WHAT IT MEASURES</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>CAPM EQUIVALENT</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>WHY IT MATTERS</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>SYMBOL</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>PRONOUNCED</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>WHAT IT MEASURES</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>CAPM EQUIVALENT</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>WHY IT MATTERS</th>
               </tr>
             </thead>
             <tbody>
