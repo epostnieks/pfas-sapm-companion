@@ -482,7 +482,7 @@ export default function PFASSAPMCompanion() {
           <span style={{fontFamily:"'JetBrains Mono', monospace",fontSize:42,fontWeight:700,color:"#EF4444"}}>𝒮_W = 0.028</span>
         </div>
         <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:11,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
-          S&P 500 long-run Sharpe ≈ 0.50 &nbsp;|&nbsp; Acceptable ≈ 0.30 &nbsp;|&nbsp; Poor ≈ 0.10
+          S&P 500 long-run Sharpe ≈ 0.40 &nbsp;|&nbsp; Acceptable ≥ 0.30 &nbsp;|&nbsp; Poor < 0.10
         </div>
         <div style={{fontFamily:"'Newsreader', serif",fontSize:14,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
           No institutional investor would hold an asset with this risk-adjusted return. This is what GDP calls productive output.
@@ -518,7 +518,7 @@ export default function PFASSAPMCompanion() {
                 <td style={{padding:"10px",color:"#F5F0E8"}}>S-W</td>
                 <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Private gain per dollar of system welfare cost. Higher is better — but in PST domains it is always low.</td>
                 <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Sharpe Ratio — return per unit of risk</td>
-                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>S&P 500 long-run Sharpe ≈ 0.50. A Sharpe of 0.10 is poor. VW Dieselgate: 𝒮_W = 0.12. LIBOR: 𝒮_W ≈ 0. ERCOT: 𝒮_W = 0.0005.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>S&P 500 long-run Sharpe ≈ 0.40. A Sharpe of 0.10 is poor. VW Dieselgate: 𝒮_W = 0.12. LIBOR: 𝒮_W ≈ 0. ERCOT: 𝒮_W = 0.0005.</td>
               </tr>
               <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
                 <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>T*</td>
