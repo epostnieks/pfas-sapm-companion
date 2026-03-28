@@ -41,7 +41,7 @@ const bc = (b) => {
   if (b >= 10) return "#DC2626";
   if (b >= 6) return "#E85D3A";
   if (b >= 4) return "#F59E0B";
-  if (b >= 2) return "#3B82F6";
+  if (b >= 2) return "#D97706";
   return "#059669";
 };
 

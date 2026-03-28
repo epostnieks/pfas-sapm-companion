@@ -11,7 +11,7 @@ const fonts = `@import url('https://fonts.googleapis.com/css2?family=Newsreader:
 // === EMBEDDED DATA ===
 
 const CHANNEL_DATA = [
-  { name: "Water Remediation", shortName: "Water", beta: 0.49, weight: 0.05, welfare: 4.8, payoff: 9.8, color: "#3A8EBA", severity: "LATENT", icon: "💧", note: "EPA NPDWR 4.0 ppt MCL; $140–$170B total liability" },
+  { name: "Water Remediation", shortName: "Water", beta: 0.49, weight: 0.05, welfare: 4.8, payoff: 9.8, color: "#D4A843", severity: "LATENT", icon: "💧", note: "EPA NPDWR 4.0 ppt MCL; $140–$170B total liability" },
   { name: "Healthcare & Endocrine", shortName: "Health", beta: 8.4, weight: 0.48, welfare: 1563, payoff: 186.7, color: "#E85D3A", severity: "ACUTE", icon: "🏥", note: "Lancet $1.5T (3 chemicals, 38 countries); cross-validated WHO/OECD/Nordic" },
   { name: "Agricultural Contamination", shortName: "Agri", beta: 0.26, weight: 0.12, welfare: 20, payoff: 76.8, color: "#6B8E23", severity: "STRUCTURAL", icon: "🌾", note: "70M acres contaminated via biosolids; 20–30% property devaluation" },
   { name: "Bioaccumulation", shortName: "Bio", beta: 471, weight: 0, welfare: 88000, payoff: 186.7, color: "#8B5CF6", severity: "EXCLUDED", icon: "🧬", note: "Structural bound only; 100% placentas positive; brain MPs +50% in 8 yrs" },
@@ -25,7 +25,7 @@ const PERSISTENCE_PREMIUM = [
   { sector: "Synthetic Textiles", revenue: 76.0, premium: 60.8, ratio: 80, color: "#E85D3A" },
   { sector: "Single-Use Plastic", revenue: 250.0, premium: 75.0, ratio: 30, color: "#DC2626" },
   { sector: "Cosmetics", revenue: 58.0, premium: 17.4, ratio: 30, color: "#D4A843" },
-  { sector: "Semiconductor Chem.", revenue: 14.9, premium: 14.9, ratio: 100, color: "#3A8EBA" },
+  { sector: "Semiconductor Chem.", revenue: 14.9, premium: 14.9, ratio: 100, color: "#D4A843" },
   { sector: "Fluoropolymer Mfg.", revenue: 10.5, premium: 9.8, ratio: 93, color: "#6B8E23" },
   { sector: "Tire Additives", revenue: 5.8, premium: 5.2, ratio: 90, color: "#8B5CF6" },
   { sector: "Food Packaging", revenue: 40.4, premium: 1.8, ratio: 4, color: "#9CA3AF" },
@@ -38,7 +38,7 @@ const CROSS_DOMAIN = [
   { name: "Mol. Persistence", beta: 35.2, ci: [28.4, 42.1], sap: -6400, mu: 0.028, type: "Slow Hollow Win", reversibility: "Irreversible", tStar: "Decades–Centuries", color: "#DC2626" },
   { name: "Ethereum", beta: 2.4, ci: null, sap: -11, mu: 0.42, type: "Moderate HW", reversibility: "Largely reversed", tStar: "Months", color: "#8B5CF6" },
   { name: "VW Dieselgate", beta: 6.8, ci: null, sap: null, mu: 0.31, type: "Fast HW (resolved)", reversibility: "Resolved", tStar: "Years", color: "#6B8E23" },
-  { name: "ERCOT 2021", beta: 2053, ci: null, sap: null, mu: 0.001, type: "Catastrophic HW", reversibility: "Fully reversed", tStar: "Days", color: "#3A8EBA" },
+  { name: "ERCOT 2021", beta: 2053, ci: null, sap: null, mu: 0.001, type: "Catastrophic HW", reversibility: "Fully reversed", tStar: "Days", color: "#D4A843" },
 ];
 
 const THRESHOLDS = [
@@ -46,7 +46,7 @@ const THRESHOLDS = [
   { domain: "U.S. Water (Detection)", tStar: 2030, confidence: "Low", status: "45% positive", color: "#E85D3A" },
   { domain: "U.S. Water (MCL)", tStar: 2055, confidence: "Low", status: "~8% above", color: "#D4A843" },
   { domain: "PFAS Remediation", tStar: 2075, confidence: "Low–Very Low", status: "Nascent", color: "#F59E0B" },
-  { domain: "Semiconductor Mfg.", tStar: 2055, confidence: "Low", status: "Rising background", color: "#3A8EBA" },
+  { domain: "Semiconductor Mfg.", tStar: 2055, confidence: "Low", status: "Rising background", color: "#D4A843" },
   { domain: "Ocean MPs (Regional)", tStar: 2075, confidence: "Very Low", status: "2× baseline", color: "#6B8E23" },
   { domain: "Ocean MPs (Global PNR)", tStar: 2100, confidence: "Very Low", status: "Hotspots 100×", color: "#8B5CF6" },
 ];
@@ -64,7 +64,7 @@ const SENSITIVITY = [
 ];
 
 const DISAGGREGATION = [
-  { cls: "PFAS", betaRange: "6–8", welfare: "~$270B/yr", dominant: "Water + PFAS healthcare", color: "#3A8EBA" },
+  { cls: "PFAS", betaRange: "6–8", welfare: "~$270B/yr", dominant: "Water + PFAS healthcare", color: "#D4A843" },
   { cls: "Microplastics", betaRange: "28–32", welfare: "~$5,800B/yr", dominant: "Lancet healthcare + release", color: "#E85D3A" },
   { cls: "POPs", betaRange: "2–4", welfare: "~$510B/yr", dominant: "Stockholm Convention legacy", color: "#6B8E23" },
 ];
