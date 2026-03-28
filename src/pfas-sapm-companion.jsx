@@ -74,9 +74,9 @@ const DISAGGREGATION = [
 function Stat({ label, value, sub, accent = false }) {
   return (
     <div style={{ textAlign: "center" }}>
-      <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.08em", color: "rgba(255,255,255,0.35)", marginBottom: 4, textTransform: "uppercase" }}>{label}</div>
+      <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, letterSpacing: "0.08em", color: "rgba(255,255,255,0.35)", marginBottom: 4, textTransform: "uppercase" }}>{label}</div>
       <div style={{ fontFamily: "'Newsreader', serif", fontSize: accent ? 32 : 24, fontWeight: 300, color: accent ? "#DC2626" : "#F5F0E8", lineHeight: 1.1 }}>{value}</div>
-      {sub && <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "rgba(255,255,255,0.3)", marginTop: 4 }}>{sub}</div>}
+      {sub && <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.3)", marginTop: 4 }}>{sub}</div>}
     </div>
   );
 }
@@ -84,7 +84,7 @@ function Stat({ label, value, sub, accent = false }) {
 function Card({ title, children, accent }) {
   return (
     <div style={{ background: "rgba(255,255,255,0.02)", border: `1px solid ${accent ? "rgba(220,38,38,0.2)" : "rgba(255,255,255,0.06)"}`, borderRadius: 2, padding: "20px 24px", marginBottom: 16 }}>
-      {title && <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, fontWeight: 600, color: accent ? "#DC2626" : "#D4A843", marginBottom: 12, letterSpacing: "0.04em" }}>{title}</div>}
+      {title && <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, fontWeight: 600, color: accent ? "#DC2626" : "#D4A843", marginBottom: 12, letterSpacing: "0.04em" }}>{title}</div>}
       {children}
     </div>
   );
@@ -93,8 +93,8 @@ function Card({ title, children, accent }) {
 function DataRow({ label, value, sub }) {
   return (
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", padding: "6px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.5)" }}>{label}</span>
-      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#F5F0E8", fontWeight: 500 }}>{value} {sub && <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300, fontSize: 9 }}>{sub}</span>}</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{label}</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "#F5F0E8", fontWeight: 500 }}>{value} {sub && <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300, fontSize: 11 }}>{sub}</span>}</span>
     </div>
   );
 }
@@ -113,19 +113,19 @@ function OverviewPanel() {
       </div>
 
       <Card title="THE IMPOSSIBILITY">
-        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 15, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 16 }}>
+        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 17, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 16 }}>
           <strong style={{ color: "#DC2626" }}>Molecular Persistence Floor: β_W ≥ 2.5</strong> — No market mechanism satisfying three axioms of commodity chemistry (Functional Necessity, Open-Release Architecture, Environmental Non-Degradability) can reduce the system beta below ~2.5 through private action alone. Grounded in the Second Law of Thermodynamics: the collection cost of dispersed PFAS is thermodynamically irreducible.
         </div>
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}>
           Impossibility lineage: Arrow (1951) → Gibbard-Satterthwaite (1973/75) → Myerson-Satterthwaite (1983) → FLP (1985) → CAP (2002) → Protocol Welfare Floor (2026b) → Molecular Persistence Floor (this paper)
         </div>
       </Card>
 
       <Card title="SHADOW PRICE DUALITY (PROPOSITION 16)">
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "#F5F0E8", marginBottom: 8 }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, color: "#F5F0E8", marginBottom: 8 }}>
           μ* = 1/β_W = 1/35.2 = <span style={{ color: "#DC2626", fontWeight: 600 }}>0.028</span>
         </div>
-        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>
+        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>
           The breakeven shadow price and the system beta are the same structural quantity in different coordinates. At any μ {">"} 0.028 — 2.8 cents per dollar of welfare — the molecular persistence economy is welfare-destroying.
         </div>
       </Card>
@@ -135,13 +135,13 @@ function OverviewPanel() {
           <DataRow label="Revenue" value="$7.36B/yr" />
           <DataRow label="System Beta" value="≈ 2.5" sub="at floor" />
           <DataRow label="Capture Rate" value=">99%" />
-          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.35)", marginTop: 8 }}>Semiconductors, medical, aerospace, lab</div>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 8 }}>Semiconductors, medical, aerospace, lab</div>
         </Card>
         <Card title="OPEN-RELEASE (β > 50)" accent>
           <DataRow label="Revenue" value="$13.65B/yr" />
           <DataRow label="System Beta" value="> 50" sub="20× floor" />
           <DataRow label="Capture Rate" value="~0%" />
-          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.35)", marginTop: 8 }}>Textiles, packaging, AFFF, cosmetics</div>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 8 }}>Textiles, packaging, AFFF, cosmetics</div>
         </Card>
       </div>
 
@@ -150,13 +150,13 @@ function OverviewPanel() {
           <div key={d.cls} style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
             <div style={{ width: 8, height: 8, borderRadius: 1, background: d.color, flexShrink: 0 }} />
             <div style={{ flex: 1 }}>
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#F5F0E8" }}>{d.cls}</span>
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.35)", marginLeft: 8 }}>β_W ≈ {d.betaRange}</span>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "#F5F0E8" }}>{d.cls}</span>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "rgba(255,255,255,0.35)", marginLeft: 8 }}>β_W ≈ {d.betaRange}</span>
             </div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.4)" }}>{d.welfare}</span>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "rgba(255,255,255,0.4)" }}>{d.welfare}</span>
           </div>
         ))}
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "rgba(255,255,255,0.25)", marginTop: 8 }}>Each class independently classifies as Hollow Win (β {">"} 1)</div>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.25)", marginTop: 8 }}>Each class independently classifies as Hollow Win (β {">"} 1)</div>
       </Card>
     </div>
   );
@@ -169,9 +169,9 @@ function ChannelsPanel() {
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={OPERATIONAL_CHANNELS} margin={{ top: 20, right: 20, bottom: 5, left: 20 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-            <XAxis dataKey="shortName" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 10, fontFamily: "'JetBrains Mono'" }} />
-            <YAxis tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 10, fontFamily: "'JetBrains Mono'" }} label={{ value: "β_W", angle: -90, position: "insideLeft", fill: "rgba(255,255,255,0.3)", fontSize: 11 }} />
-            <Tooltip contentStyle={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.1)", fontFamily: "'JetBrains Mono', monospace", fontSize: 11 }} />
+            <XAxis dataKey="shortName" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 12, fontFamily: "'JetBrains Mono'" }} />
+            <YAxis tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 12, fontFamily: "'JetBrains Mono'" }} label={{ value: "β_W", angle: -90, position: "insideLeft", fill: "rgba(255,255,255,0.3)", fontSize: 13 }} />
+            <Tooltip contentStyle={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.1)", fontFamily: "'JetBrains Mono', monospace", fontSize: 13 }} />
             <Bar dataKey="beta" radius={[2, 2, 0, 0]}>
               {OPERATIONAL_CHANNELS.map((entry, i) => (
                 <Cell key={i} fill={entry.color} />
@@ -187,17 +187,17 @@ function ChannelsPanel() {
       {CHANNEL_DATA.map(ch => (
         <Card key={ch.name} title={`${ch.icon}  ${ch.name.toUpperCase()}`}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 16, marginBottom: 8 }}>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.35)" }}>β_W</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: ch.color, fontWeight: 500 }}>{ch.beta}</div></div>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.35)" }}>Weight</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: "#F5F0E8" }}>{ch.weight > 0 ? `${(ch.weight * 100).toFixed(0)}%` : "Excl."}</div></div>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.35)" }}>Welfare</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: "#F5F0E8" }}>${ch.welfare}B</div></div>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.35)" }}>Severity</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: ch.color, fontWeight: 600 }}>{ch.severity}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.35)" }}>β_W</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: ch.color, fontWeight: 500 }}>{ch.beta}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Weight</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: "#F5F0E8" }}>{ch.weight > 0 ? `${(ch.weight * 100).toFixed(0)}%` : "Excl."}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Welfare</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: "#F5F0E8" }}>${ch.welfare}B</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Severity</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 14, color: ch.color, fontWeight: 600 }}>{ch.severity}</div></div>
           </div>
-          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.35)", lineHeight: 1.5 }}>{ch.note}</div>
+          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.35)", lineHeight: 1.5 }}>{ch.note}</div>
         </Card>
       ))}
 
       <Card title="WEIGHTED AGGREGATE ARITHMETIC">
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
           {OPERATIONAL_CHANNELS.map(c => `${c.weight}×${c.beta}`).join(" + ")} = <strong style={{ color: "#F5F0E8" }}>15.4</strong> (channel-weighted avg)<br />
           $6,580B / $186.7B = <strong style={{ color: "#DC2626" }}>35.2</strong> (welfare ratio β̄ — primary measure)<br />
           2 × 0.000252 × $161.7B = <strong style={{ color: "#F5F0E8" }}>81.5</strong> (PSF marginal at current Π)
@@ -215,9 +215,9 @@ function CrossDomainPanel() {
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={CROSS_DOMAIN.filter(d => d.beta < 200)} margin={{ top: 20, right: 20, bottom: 5, left: 20 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-            <XAxis dataKey="name" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 10, fontFamily: "'JetBrains Mono'" }} />
-            <YAxis tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 10, fontFamily: "'JetBrains Mono'" }} domain={[0, 40]} />
-            <Tooltip contentStyle={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.1)", fontFamily: "'JetBrains Mono'", fontSize: 11 }} />
+            <XAxis dataKey="name" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 12, fontFamily: "'JetBrains Mono'" }} />
+            <YAxis tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 12, fontFamily: "'JetBrains Mono'" }} domain={[0, 40]} />
+            <Tooltip contentStyle={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.1)", fontFamily: "'JetBrains Mono'", fontSize: 13 }} />
             <Bar dataKey="beta" radius={[2, 2, 0, 0]}>
               {CROSS_DOMAIN.filter(d => d.beta < 200).map((d, i) => <Cell key={i} fill={d.color} />)}
             </Bar>
@@ -226,22 +226,22 @@ function CrossDomainPanel() {
             </ReferenceLine>
           </BarChart>
         </ResponsiveContainer>
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.25)", textAlign: "center" }}>ERCOT (β=2,053) excluded from chart for scale. Shown in table below.</div>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.25)", textAlign: "center" }}>ERCOT (β=2,053) excluded from chart for scale. Shown in table below.</div>
       </div>
 
       {CROSS_DOMAIN.map(d => (
         <Card key={d.name} title={d.name.toUpperCase()}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 12 }}>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.35)" }}>β_W</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 18, color: d.color, fontWeight: 500 }}>{d.beta.toLocaleString()}</div></div>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.35)" }}>Breakeven μ</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 14, color: "#F5F0E8" }}>{d.mu}</div></div>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.35)" }}>Reversibility</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.5)" }}>{d.reversibility}</div></div>
-            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.35)" }}>Classification</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: d.color, fontWeight: 500 }}>{d.type}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.35)" }}>β_W</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 18, color: d.color, fontWeight: 500 }}>{d.beta.toLocaleString()}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.35)" }}>Breakeven μ</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 16, color: "#F5F0E8" }}>{d.mu}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.35)" }}>Reversibility</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{d.reversibility}</div></div>
+            <div><span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.35)" }}>Classification</span><div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: d.color, fontWeight: 500 }}>{d.type}</div></div>
           </div>
         </Card>
       ))}
 
       <Card title="CROSS-DOMAIN ALLOCATION RULE">
-        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
+        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
           By Proposition 16 (Shadow Price Duality), an institutional designer should equalize μ across domains. Molecular persistence (μ = 0.028) is <strong style={{ color: "#DC2626" }}>20× more welfare-destroying</strong> per dollar of regulatory forbearance than Bitcoin (μ = 0.56).
         </div>
       </Card>
@@ -257,9 +257,9 @@ function ThresholdsPanel() {
         <ResponsiveContainer width="100%" height={280}>
           <BarChart data={chartData} layout="vertical" margin={{ top: 10, right: 20, bottom: 5, left: 120 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-            <XAxis type="number" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 10, fontFamily: "'JetBrains Mono'" }} label={{ value: "Years from 2026", position: "insideBottom", offset: -5, fill: "rgba(255,255,255,0.3)", fontSize: 10 }} />
-            <YAxis type="category" dataKey="domain" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 9, fontFamily: "'JetBrains Mono'" }} width={115} />
-            <Tooltip contentStyle={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.1)", fontFamily: "'JetBrains Mono'", fontSize: 11 }} />
+            <XAxis type="number" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 12, fontFamily: "'JetBrains Mono'" }} label={{ value: "Years from 2026", position: "insideBottom", offset: -5, fill: "rgba(255,255,255,0.3)", fontSize: 12 }} />
+            <YAxis type="category" dataKey="domain" tick={{ fill: "rgba(255,255,255,0.4)", fontSize: 11, fontFamily: "'JetBrains Mono'" }} width={115} />
+            <Tooltip contentStyle={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.1)", fontFamily: "'JetBrains Mono'", fontSize: 13 }} />
             <Bar dataKey="yearsFromNow" radius={[0, 2, 2, 0]}>
               {chartData.map((t, i) => <Cell key={i} fill={t.color} fillOpacity={0.7} />)}
             </Bar>
@@ -272,17 +272,17 @@ function ThresholdsPanel() {
 
       {THRESHOLDS.map(t => (
         <div key={t.domain} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-          <div style={{ width: 60, fontFamily: "'JetBrains Mono'", fontSize: 13, color: t.color, fontWeight: 600, textAlign: "center" }}>~{t.tStar}</div>
+          <div style={{ width: 60, fontFamily: "'JetBrains Mono'", fontSize: 15, color: t.color, fontWeight: 600, textAlign: "center" }}>~{t.tStar}</div>
           <div style={{ flex: 1 }}>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "#F5F0E8" }}>{t.domain}</div>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.35)" }}>{t.status}</div>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "#F5F0E8" }}>{t.domain}</div>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.35)" }}>{t.status}</div>
           </div>
-          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.3)", padding: "2px 8px", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 2 }}>{t.confidence}</div>
+          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.3)", padding: "2px 8px", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 2 }}>{t.confidence}</div>
         </div>
       ))}
 
       <Card title="FEEDBACK LOOPS" accent>
-        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>
+        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>
           (1) Chemical synergism: microplastics concentrate PFAS via sorption → increased internal dose.
           (2) Infrastructure vulnerability: rising MPs foul the RO/IX filtration needed to remove PFAS.
           (3) Biological meltdown: Toxic Triad (radiation + PFAS + MPs) compromises DNA repair pathways.
@@ -298,11 +298,11 @@ function SensitivityPanel() {
     <div>
       <Card title="COOPERATIVE BASELINE SENSITIVITY">
         <div style={{ overflowX: "auto" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "'JetBrains Mono'", fontSize: 11 }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "'JetBrains Mono'", fontSize: 13 }}>
             <thead>
               <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
                 {["Π_C", "Gap", "Marginal β", "Welfare β̄", "Class."].map(h => (
-                  <th key={h} style={{ padding: "8px 12px", textAlign: "left", color: "rgba(255,255,255,0.4)", fontWeight: 400, fontSize: 10 }}>{h}</th>
+                  <th key={h} style={{ padding: "8px 12px", textAlign: "left", color: "rgba(255,255,255,0.4)", fontWeight: 400, fontSize: 12 }}>{h}</th>
                 ))}
               </tr>
             </thead>
@@ -319,7 +319,7 @@ function SensitivityPanel() {
             </tbody>
           </table>
         </div>
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.25)", marginTop: 12 }}>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.25)", marginTop: 12 }}>
           Counterintuitive: higher Π_C increases β_W because the welfare shortfall is fixed while the extraction gap narrows.
         </div>
       </Card>
@@ -329,13 +329,13 @@ function SensitivityPanel() {
         <DataRow label="Mean β_W" value="35.8" />
         <DataRow label="90% CI" value="[28.4, 42.1]" />
         <DataRow label="Classification" value="100% Slow Hollow Win" />
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.35)", marginTop: 12, lineHeight: 1.6 }}>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.35)", marginTop: 12, lineHeight: 1.6 }}>
           Distributions: Water β tri(0.2, 0.5, 0.8) · Health β tri(3.0, 8.4, 15.0) · Agri β tri(0.1, 0.25, 0.5) · Reg β tri(0.03, 0.07, 0.15) · Release β tri(20, 35.2, 55)
         </div>
       </Card>
 
       <Card title="MINIMUM PUBLISHABLE RESULT">
-        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
+        <div style={{ fontFamily: "'Newsreader', serif", fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
           Under <em>simultaneously</em> conservative assumptions — healthcare 10× lower ($150B), premium doubled ($373B), max Π_C ($50B), bioaccumulation excluded:
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16, marginTop: 16 }}>
@@ -350,7 +350,7 @@ function SensitivityPanel() {
         <DataRow label="Stern (~1.4%)" value="$470T" sub="converges" />
         <DataRow label="Weitzman (fat-tail)" value="∞" sub="diverges under A3" />
         <DataRow label="SAPM β_W" value="35.2" sub="ρ-free, finite" />
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.25)", marginTop: 8 }}>Where DICE produces 3 numbers depending on ρ, SAPM produces 1.</div>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.25)", marginTop: 8 }}>Where DICE produces 3 numbers depending on ρ, SAPM produces 1.</div>
       </Card>
     </div>
   );
@@ -363,14 +363,14 @@ function MethodsPanel() {
         {PERSISTENCE_PREMIUM.map(s => (
           <div key={s.sector} style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
             <div style={{ width: 6, height: 6, borderRadius: 1, background: s.color, flexShrink: 0 }} />
-            <div style={{ flex: 1, fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.5)" }}>{s.sector}</div>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "#F5F0E8", width: 70, textAlign: "right" }}>${s.premium}B</div>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 9, color: "rgba(255,255,255,0.3)", width: 40, textAlign: "right" }}>{s.ratio}%</div>
+            <div style={{ flex: 1, fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.5)" }}>{s.sector}</div>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "#F5F0E8", width: 70, textAlign: "right" }}>${s.premium}B</div>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.3)", width: 40, textAlign: "right" }}>{s.ratio}%</div>
           </div>
         ))}
         <div style={{ display: "flex", justifyContent: "space-between", padding: "10px 0 0", borderTop: "1px solid rgba(255,255,255,0.08)", marginTop: 4 }}>
-          <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "#D4A843", fontWeight: 600 }}>TOTAL</span>
-          <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "#D4A843", fontWeight: 600 }}>$186.7B (41%)</span>
+          <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "#D4A843", fontWeight: 600 }}>TOTAL</span>
+          <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "#D4A843", fontWeight: 600 }}>$186.7B (41%)</span>
         </div>
       </Card>
 
@@ -381,14 +381,14 @@ function MethodsPanel() {
           { ax: "A3", name: "Environmental Non-Degradability", desc: "The material does not degrade in any natural process on human-relevant timescales. C-F bond: 485 kJ/mol. Second Law guarantee." },
         ].map(a => (
           <div key={a.ax} style={{ padding: "10px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "#DC2626", fontWeight: 600 }}>{a.ax}: {a.name}</div>
-            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.4)", marginTop: 4, lineHeight: 1.5 }}>{a.desc}</div>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "#DC2626", fontWeight: 600 }}>{a.ax}: {a.name}</div>
+            <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.4)", marginTop: 4, lineHeight: 1.5 }}>{a.desc}</div>
           </div>
         ))}
       </Card>
 
       <Card title="PIGOUVIAN INSUFFICIENCY THEOREM">
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
           No function τ: T → ℝ of bilateral transaction data T recovers ∂W/∂x_i. The market price system is an insufficient statistic for W (Blackwell, 1951). The tax authority must observe W independently — precisely what EPA UCMR 5 and CDC biomonitoring are only now beginning to produce, 70+ years after industrial fluorochemistry began.
         </div>
       </Card>
@@ -399,17 +399,17 @@ function MethodsPanel() {
       ].map(section => (
         <Card key={section.title} title={section.title}>
           {section.items.map((item, i) => (
-            <div key={i} style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.4)", padding: "4px 0", lineHeight: 1.5 }}>{item}</div>
+            <div key={i} style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.4)", padding: "4px 0", lineHeight: 1.5 }}>{item}</div>
           ))}
         </Card>
       ))}
 
       <div style={{ marginTop: 32, padding: "20px 24px", background: "rgba(220,38,38,0.04)", border: "1px solid rgba(220,38,38,0.1)", borderRadius: 2 }}>
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, fontWeight: 600, color: "#DC2626", marginBottom: 10 }}>CITATION</div>
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, fontWeight: 600, color: "#DC2626", marginBottom: 10 }}>CITATION</div>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 13, color: "rgba(255,255,255,0.6)", lineHeight: 1.7 }}>
           Postnieks, E. (2026c). "Applying the System Asset Pricing Model to Molecular Persistence: Measuring the System Welfare Cost of PFAS, Microplastics, and Persistent Organic Pollutants." Working Paper, March 2026.
         </div>
-        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "rgba(255,255,255,0.3)", marginTop: 10 }}>
+        <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 12, color: "rgba(255,255,255,0.3)", marginTop: 10 }}>
           Companion: Postnieks (2026a) "The Private Pareto Trap" · Postnieks (2026b) "Applying the SAPM to Bitcoin"
         </div>
       </div>
@@ -435,16 +435,16 @@ export default function PFASSAPMCompanion() {
       <style>{fonts}</style>
 
       <header style={{ padding: "40px 0 24px", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.12em", color: "#DC2626", marginBottom: 12, textTransform: "uppercase" }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, letterSpacing: "0.12em", color: "#DC2626", marginBottom: 12, textTransform: "uppercase" }}>
           Replication & Visualization Companion
         </div>
         <h1 style={{ fontSize: 26, fontWeight: 400, margin: 0, lineHeight: 1.25, letterSpacing: "-0.02em", color: "#F5F0E8" }}>
           Applying the System Asset Pricing Model to Molecular Persistence
         </h1>
-        <p style={{ fontSize: 14, color: "rgba(255,255,255,0.4)", margin: "8px 0 0", fontStyle: "italic" }}>
+        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.4)", margin: "8px 0 0", fontStyle: "italic" }}>
           Measuring the System Welfare Cost of PFAS, Microplastics, and Persistent Organic Pollutants
         </p>
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "rgba(255,255,255,0.3)", marginTop: 12 }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "rgba(255,255,255,0.3)", marginTop: 12 }}>
           Erik Postnieks · Working Paper — March 2026 · Postnieks (2026c)
         </div>
       </header>
@@ -455,7 +455,7 @@ export default function PFASSAPMCompanion() {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             style={{
-              fontFamily: "'JetBrains Mono', monospace", fontSize: 11, letterSpacing: "0.04em",
+              fontFamily: "'JetBrains Mono', monospace", fontSize: 13, letterSpacing: "0.04em",
               color: activeTab === tab.id ? "#DC2626" : "rgba(255,255,255,0.35)",
               background: "none", border: "none", cursor: "pointer",
               padding: "12px 14px",
@@ -477,32 +477,32 @@ export default function PFASSAPMCompanion() {
 
       {/* 𝒮_W WELFARE EFFICIENCY RATIO */}
       <div style={{padding:"24px",background:"#1A1A1A",border:"2px solid #EF444440",borderRadius:4,margin:"24px 0"}}>
-        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:12,color:"#EF4444",letterSpacing:2,marginBottom:16}}>WELFARE EFFICIENCY RATIO</div>
+        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize: 14,color:"#EF4444",letterSpacing:2,marginBottom:16}}>WELFARE EFFICIENCY RATIO</div>
         <div style={{display:"flex",alignItems:"baseline",gap:12,marginBottom:12}}>
-          <span style={{fontFamily:"'JetBrains Mono', monospace",fontSize:42,fontWeight:700,color:"#EF4444"}}>𝒮_W = 0.028</span>
+          <span style={{fontFamily:"'JetBrains Mono', monospace",fontSize: 42,fontWeight:700,color:"#EF4444"}}>𝒮_W = 0.028</span>
         </div>
-        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:13,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
+        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize: 15,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
           S&P 500 long-run Sharpe ≈ 0.40 &nbsp;|&nbsp; Acceptable ≥ 0.30 &nbsp;|&nbsp; Poor &lt; 0.10
         </div>
-        <div style={{fontFamily:"'Newsreader', serif",fontSize:16,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
+        <div style={{fontFamily:"'Newsreader', serif",fontSize: 16,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
           No institutional investor would hold an asset with this risk-adjusted return. This is what GDP calls productive output.
         </div>
       </div>
 
       {/* GREEK SYMBOL GLOSSARY */}
       <details style={{margin:"24px 0"}}>
-        <summary style={{fontFamily:"'JetBrains Mono', monospace",fontSize:13,color:"#F59E0B",cursor:"pointer",padding:"12px 16px",background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderRadius:4,letterSpacing:1,listStyle:"none",display:"flex",alignItems:"center",gap:8}}>
-          <span style={{color:"#F59E0B",fontSize:14}}>▸</span> WHAT THESE SYMBOLS MEAN — AND WHY THEY MATTER
+        <summary style={{fontFamily:"'JetBrains Mono', monospace",fontSize: 15,color:"#F59E0B",cursor:"pointer",padding:"12px 16px",background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderRadius:4,letterSpacing:1,listStyle:"none",display:"flex",alignItems:"center",gap:8}}>
+          <span style={{color:"#F59E0B",fontSize: 16}}>▸</span> WHAT THESE SYMBOLS MEAN — AND WHY THEY MATTER
         </summary>
         <div style={{background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderTop:"none",borderRadius:"0 0 4px 4px",padding:"16px",overflowX:"auto"}}>
-          <table style={{width:"100%",borderCollapse:"collapse",fontFamily:"'JetBrains Mono', monospace",fontSize:13}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontFamily:"'JetBrains Mono', monospace",fontSize: 15}}>
             <thead>
               <tr style={{borderBottom:"1px solid rgba(255,255,255,0.1)"}}>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>SYMBOL</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>PRONOUNCED</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>WHAT IT MEASURES</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>CAPM EQUIVALENT</th>
-                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:12,letterSpacing:1}}>WHY IT MATTERS</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize: 14,letterSpacing:1}}>SYMBOL</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize: 14,letterSpacing:1}}>PRONOUNCED</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize: 14,letterSpacing:1}}>WHAT IT MEASURES</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize: 14,letterSpacing:1}}>CAPM EQUIVALENT</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize: 14,letterSpacing:1}}>WHY IT MATTERS</th>
               </tr>
             </thead>
             <tbody>
@@ -575,7 +575,7 @@ export default function PFASSAPMCompanion() {
       </details>
 
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "20px 0", textAlign: "center" }}>
-        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.2)" }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "rgba(255,255,255,0.2)" }}>
           © 2026 Erik Postnieks · Correspondence: erik@woosterllc.com · All rights reserved
         </div>
       </footer>
