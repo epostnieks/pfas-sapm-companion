@@ -475,6 +475,105 @@ export default function PFASSAPMCompanion() {
         {activeTab === "methods" && <MethodsPanel />}
       </main>
 
+      {/* 𝒮_W WELFARE EFFICIENCY RATIO */}
+      <div style={{padding:"24px",background:"#1A1A1A",border:"2px solid #EF444440",borderRadius:4,margin:"24px 0"}}>
+        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:10,color:"#EF4444",letterSpacing:2,marginBottom:16}}>WELFARE EFFICIENCY RATIO</div>
+        <div style={{display:"flex",alignItems:"baseline",gap:12,marginBottom:12}}>
+          <span style={{fontFamily:"'JetBrains Mono', monospace",fontSize:42,fontWeight:700,color:"#EF4444"}}>𝒮_W = 0.028</span>
+        </div>
+        <div style={{fontFamily:"'JetBrains Mono', monospace",fontSize:11,color:"rgba(255,255,255,0.4)",marginBottom:16}}>
+          S&P 500 long-run Sharpe ≈ 0.50 &nbsp;|&nbsp; Acceptable ≈ 0.30 &nbsp;|&nbsp; Poor ≈ 0.10
+        </div>
+        <div style={{fontFamily:"'Newsreader', serif",fontSize:14,color:"#EF4444",lineHeight:1.7,fontStyle:"italic"}}>
+          No institutional investor would hold an asset with this risk-adjusted return. This is what GDP calls productive output.
+        </div>
+      </div>
+
+      {/* GREEK SYMBOL GLOSSARY */}
+      <details style={{margin:"24px 0"}}>
+        <summary style={{fontFamily:"'JetBrains Mono', monospace",fontSize:11,color:"#F59E0B",cursor:"pointer",padding:"12px 16px",background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderRadius:4,letterSpacing:1,listStyle:"none",display:"flex",alignItems:"center",gap:8}}>
+          <span style={{color:"#F59E0B",fontSize:14}}>▸</span> WHAT THESE SYMBOLS MEAN — AND WHY THEY MATTER
+        </summary>
+        <div style={{background:"#1A1A1A",border:"1px solid rgba(245,158,11,0.15)",borderTop:"none",borderRadius:"0 0 4px 4px",padding:"16px",overflowX:"auto"}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontFamily:"'JetBrains Mono', monospace",fontSize:11}}>
+            <thead>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.1)"}}>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>SYMBOL</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>PRONOUNCED</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>WHAT IT MEASURES</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>CAPM EQUIVALENT</th>
+                <th style={{textAlign:"left",padding:"8px 10px",color:"#F59E0B",fontSize:10,letterSpacing:1}}>WHY IT MATTERS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>β_W</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>beta-W</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>How much social welfare this sector destroys per dollar of private gain. β_W = 5.0 means $5 of welfare destroyed per $1 earned.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>β (market beta) — measures how much an asset moves with the market</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>In CAPM, high beta means high financial risk. In SAPM, high β_W means high welfare destruction per dollar of revenue.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>𝒮_W</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>S-W</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Private gain per dollar of system welfare cost. Higher is better — but in PST domains it is always low.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Sharpe Ratio — return per unit of risk</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>S&P 500 long-run Sharpe ≈ 0.50. A Sharpe of 0.10 is poor. VW Dieselgate: 𝒮_W = 0.12. LIBOR: 𝒮_W ≈ 0. ERCOT: 𝒮_W = 0.0005.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>T*</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>T-star</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>The predicted time until a Hollow Win collapses into outright failure.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Closest to duration or time-to-default in credit analysis</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>VW: T* = 6.1 years predicted, ~6 years observed. LIBOR: T* ≤ 0.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>μ*</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>mu-star</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>The efficient price of system welfare. μ* = 1/β_W.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Closest to the risk-free rate as a floor price for risk</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>β_W = 7.4 → μ* ≈ 0.135. β_W = 35.2 → μ* ≈ 0.028.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>Πˢᵃ</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>pi-SA</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>System-adjusted payoff. Πˢᵃ = Π − μ* · ΔW. If negative, the deal destroys more welfare than it creates.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Jensen's alpha</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>A deal that looks like +$2.3M joint gain may be −$2.4M system-adjusted.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>W</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>W</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>System welfare — the health of the shared system.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>No CAPM equivalent</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Cannot be computed from bilateral payoffs. This is the impossibility.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>δ</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>delta</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Total accumulated welfare cost at crossover.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>No direct equivalent</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>VW: δ ≈ $3.7B in accumulated emissions damage.</td>
+              </tr>
+              <tr style={{borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>η</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>eta</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Feedback coupling speed.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Mean reversion speed</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>VW: η ≈ 0.3. ERCOT: η ≈ 0.</td>
+              </tr>
+              <tr>
+                <td style={{padding:"10px",color:"#F59E0B",fontWeight:600}}>λ</td>
+                <td style={{padding:"10px",color:"#F5F0E8"}}>lambda</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Rate of welfare cost accumulation per unit of private gain.</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>No direct equivalent</td>
+                <td style={{padding:"10px",color:"rgba(255,255,255,0.4)",fontFamily:"'Newsreader', serif"}}>Higher λ means faster damage accumulation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "20px 0", textAlign: "center" }}>
         <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "rgba(255,255,255,0.2)" }}>
           © 2026 Erik Postnieks · Correspondence: erik@woosterllc.com · All rights reserved
